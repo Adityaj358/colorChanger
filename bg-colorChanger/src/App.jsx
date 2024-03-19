@@ -11,11 +11,18 @@ function App() {
         <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
           <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
             <button
-            onClick={() => setColour("red")}
+            onClick={() => setColour("orange")}
             className="outline-none px-4 py1 rounded-full text-white shadow-sm"
-              style={{ backgroundColor: "red" }}
+              style={{ backgroundColor: "orange" }}
             >
-              Red
+              Orange
+            </button>
+            <button
+            onClick={() => setColour("white")}
+              className="outline-none px-4 py1 rounded-full text-white shadow-sm border-black"
+              style={{ backgroundColor: "white" }}
+            >
+              White
             </button>
             <button
             onClick={() => setColour("green")}
@@ -23,13 +30,6 @@ function App() {
               style={{ backgroundColor: "green" }}
             >
               Green
-            </button>
-            <button
-            onClick={() => setColour("orange")}
-              className="outline-none px-4 py1 rounded-full text-white shadow-sm"
-              style={{ backgroundColor: "orange" }}
-            >
-              Orange
             </button>
           </div>
         </div>
